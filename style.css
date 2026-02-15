@@ -51,6 +51,7 @@ li:hover a {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
   margin-left: 5%;
 }
 
@@ -79,6 +80,7 @@ li:hover a {
 #info-2 {
   font-size: 18px;
   margin-top: 35px;
+  color: #c0c0c0;
 }
 
 .explore-btn {
