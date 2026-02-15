@@ -1,0 +1,39 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 5 00;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  height: 100px;
+  background-color: #2d2d2d;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left-header {
+  font-size: 19px;
+  color: #c0c0c0;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+li a {
+  color: #7a7a7a;
+  text-decoration: none;
+}
+
+li:hover a {
+  color: white;
+}
