@@ -103,11 +103,14 @@ li:hover a {
   border: 2px solid lightblue;
 }
 
-
-.education-container{
+/* Education container grid */
+.background-profile{
+  display: grid;
+  grid-template-columns:50% 50%;
   margin-top: 140px;
 }
 
+/* Education*/
 .education-container>h2{
   text-align: center;
   color: white;
@@ -116,9 +119,41 @@ li:hover a {
   font-style: italic;
   font-weight: 900;
 }
-
-.education-info>p{
+/* List decoration */
+.education-info{
   padding: 10px 30px;
   line-height: 0.5;
   color: white;
+  text-align: center;
+}
+#studies{
+  cursor: auto;
+}
+
+/* Skills*/
+.skills-container>h2{
+  text-align: center;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 900;
+}
+/* List decoration */
+.skills-info{
+  padding: 10px 30px;
+  line-height: 0.5;
+  color: white;
+  text-align: center;
+}
+
+#skills{
+  cursor: auto;
+}
+
+.footer{
+  width: 100%;
+  height: 250px;
+  background-color: #2d2d2d;
+  margin-top: 80px;
 }
