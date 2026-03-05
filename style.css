@@ -39,40 +39,37 @@ li:hover a {
   color: lightblue;
 }
 
+/* Hero image */
 .hero {
-  height: 89.1vh;
+  height: 80.1vh;
   background-color: #1f2020;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  flex-direction: column;
   margin-top: 40px;
 }
 
 .profile-image {
-  width: 70%;
-  height: 780px;
+  width: 100%;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  margin-left: 15%;
+  border-radius: 180px;
 }
 
 .profile-image img {
-  width: 100%;
+  width: 20%;
   height: 100%;
   object-fit: auto;
-}
-
-.info-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: #1f2020;
-  padding: 20px 150px;
+  border-radius: 360px;
 }
 
 .informations {
-  margin-top: 180px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  text-align: center;
 }
 #info-1 {
   font-size: 62px;
@@ -101,34 +98,41 @@ li:hover a {
   background-color: lightblue;
   color: black;
   border: 2px solid lightblue;
-}
-
-/* Education container grid */
-.background-profile{
-  display: grid;
-  grid-template-columns:50% 50%;
-  margin-top: 140px;
-}
+} 
 
 /* Education*/
+.education-container{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 .education-container>h2{
   text-align: center;
   color: white;
   font-family: "Inter", sans-serif;
   font-size: 32px;
   font-style: italic;
-  font-weight: 900;
+  font-weight: 200;
 }
-/* List decoration */
+/* plhrofories */
 .education-info{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   padding: 10px 30px;
   line-height: 0.5;
   color: white;
   text-align: center;
+  margin-top: 80px;
 }
-#studies{
-  cursor: auto;
+.education-info img{
+  width: 300px;
+  border-radius: 8px;
 }
+.education-info>p{
+  margin-left: 50px;
+}
+
 
 /* Skills*/
 .skills-container>h2{
@@ -137,19 +141,30 @@ li:hover a {
   font-family: "Inter", sans-serif;
   font-size: 32px;
   font-style: italic;
-  font-weight: 900;
-}
-/* List decoration */
-.skills-info{
-  padding: 10px 30px;
-  line-height: 0.5;
-  color: white;
-  text-align: center;
+  font-weight: 200;
 }
 
-#skills{
-  cursor: auto;
+.skills-info{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  margin-top: 80px;
+  margin-left: 20px;
 }
+
+.skills-image{
+  width: 600px;
+  height: 400px;
+  object-fit: auto;
+}
+
+.skills-par{
+  text-align: center;
+  color: white;
+  font-size: 26px;
+  margin-top: 10px;
+}
+
 
 .footer{
   width: 100%;
