@@ -1,0 +1,41 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 5 00;
+  background-color:  #1f2020;;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 100px;
+  background-color: #2d2d2d;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left-header {
+  font-size: 19px;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+li:hover a {
+  color: lightblue;
+}
