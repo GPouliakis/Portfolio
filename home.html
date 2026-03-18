@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="home.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Document</title>
   </head>
 
@@ -13,10 +14,10 @@
       <div class="left-header">George Pouliakis</div>
       <div class="right-header">
         <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="AboutMe.html">About Me</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="home.html">Αρχική</a></li>
+          <li><a href="AboutMe.html">Για μένα</a></li>
+          <li><a href="#">Βουνά</a></li>
+          <li><a href="#">Επικοινωνία</a></li>
         </ul>
       </div>
     </header>
@@ -24,14 +25,14 @@
     <!-- Hero -->
     <div class="hero">
       <div class="profile-image">
-        <img src="/images/download.jpg" alt="profile-image" />
+        <img src="/images/profile-image.jpg" alt="profile-image" />
       </div>
         <div class="informations">
-          <p id="info-1">
-            Front-end Developer
-          </p>
+          <h1 id="info-1">
+            Hiker - Photographer
+          </h1>
           <p id="info-2">
-             I am Web Developer - Designer. I'm 23yo  
+             Είμαι πεζοπόρος που μου αρέσει να πηγαίνω σε διάφορα βουνά και να βγάζω φωτογραφίες
           </p>
           <div class="explore-btn">
             <button id="button-1">Explore Now</button>
@@ -42,76 +43,98 @@
     </div>
 
     <!-- 1st section -->
-      <div class="education-container">
-          <h2>Education</h2>
-          <div class="education-info">
-            <img src="/images/iek-alfa_c1782a94d6a533614ff26afd6a2787d5.jpg" alt="web-developer">
-            <p>IEK ALFA Front-end developer 2023-2025</p>
-          </div>
-      </div>
-      <div class="skills-container">
-          <h2>Skills</h2>
-          <div class="skills-info">
-            <div id="skills">
-              <img class="skills-image" src="/images/html.jpg" alt="html">
-              <p class="skills-par">Html</p>
-            </div>
-            <div id="skills">
-              <img class="skills-image" src="/images/css.png" alt="css">
-              <p class="skills-par">Css</p>
-            </div>
-            <div id="skills">
-              <img class="skills-image" src="/images/wordpress.jpg" alt="wordpress">
-              <p class="skills-par">Wordpress</p>
-            </div>
-            <div id="skills">
-              <img class="skills-image" src="/images/Adobe.jpg" alt="adobe">
-              <p class="skills-par">Wordpress</p>
-            </div>
-          </div>
-      </div>
+      <div class="container px-4 py-5" id="custom-cards"> 
+        <h2 class="pb-2 border-bottom" style="color:white;">Mountain Views</h2> 
+        <div class="row row-1 row-lg-3 align-items-stretch g-4 py-5"> 
+          <div class="col"> 
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('/images/moon.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;"> 
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
+              <h3 class="pt-1 mt-5 mb-4 display-6 lh-1 fw-normal text-black">Μια νυχτερινή συνάντηση γεμάτη μυστήριο κάτω από το φως των αστεριών.</h3> 
+              <ul class="d-flex list-unstyled mt-auto"> 
+                <li class="d-flex align-items-center"> 
+                  <small class="mt-auto">Καϊμάκτσαλαν</small> 
+                </li>
+              </ul> 
+            </div> 
+          </div> 
+        </div> 
 
+        <div class="col"> 
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('/images/flowers.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;"> 
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-normal text-black">Το απαλό και σιωπηλό ξύπνημα της άνοιξης.</h3> 
+              <ul class="d-flex list-unstyled mt-auto"> 
+                <li class="d-flex align-items-center"> 
+                  <small class="mt-auto">Καϊμάκτσαλαν</small> 
+                </li>
+              </ul> 
+            </div> 
+          </div> 
+        </div> 
 
-      <div class="services-container">
-        <div class="box-services">
-          <div class="image-services">
-            <img src="/images/top-mountain-view_23-2150528658.jpg" alt="mountain">
+        <div class="col"> 
+          <div class="card card-cover text-bg-dark rounded-4 shadow-lg" style="background-image: url('/images/bird.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;"> 
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-normal text-black">Μια πολύχρωμη στιγμή απόλυτης ηρεμίας μέσα στην άγρια φύση.</h3> 
+              <ul class="d-flex list-unstyled mt-auto"> 
+                <li class="d-flex align-items-center me-3"> 
+                  <small class="mt-auto">Καϊμάκτσαλαν</small> 
+                </li>
+              </ul> 
+            </div> 
+          </div> 
+        </div> 
+
+      </div> 
+
+    </div>
+
+<!-- Services -->
+ 
+    <div class="services-container">
+      <div class="mb-3">
+      <h3 style="color: white; text-align: center;">Δραστηριότητες</h3>
+      </div>
+      <div class="box-services">
+        <div class="image-services">
+          <img src="/images/top-mountain-view_23-2150528658.jpg" alt="mountain">
+        </div>
+        <div class="services">
+          <div class="nums-services">
+            <img src="/images/number-circle-one-bold-svgrepo-com.svg" alt="" width="50">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit distinctio eligendi rem laudantium quos temporibus incidunt sint numquam,nesciunt magni? Atque ab quidem sapiente quasi incidunt eum, nihil vero ex.</p>
           </div>
-          <div class="services">
-            <div class="nums-services">
-              <img src="/images/number-circle-one-bold-svgrepo-com.svg" alt="" width="50">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit distinctio eligendi rem laudantium quos temporibus incidunt sint numquam, nesciunt magni? Atque ab quidem sapiente quasi incidunt eum, nihil vero ex.</p>
-            </div>
-            <div class="nums-services">
-              <img src="/images/number-circle-two-bold-svgrepo-com.svg" alt="" width="50">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nihil consequatur perspiciatis, pariatur in sapiente sequi nam nostrum cupiditate provident suscipit explicabo necessitatibus saepe! Numquam ea temporibus molestiae assumenda enim!</p>
-            </div>
-            <div class="nums-services">
-              <img src="/images/number-circle-three-bold-svgrepo-com.svg" alt="" width="50">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus quas magni tempora aut, quos expedita at odio nemo eius aspernatur totam illo cumque sapiente laudantium vel rem distinctio inventore animi?</p>
-            </div>
-            <div class="nums-services">
-              <img src="/images/number-circle-four-bold-svgrepo-com.svg" alt="" width="50">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quo ea nobis! Nam doloribus dignissimos animi iste minus ab doloremque? Atque doloribus, sit enim repudiandae laboriosam vel aperiam eaque quam?</p>
-            </div>
+          <div class="nums-services">
+            <img src="/images/number-circle-two-bold-svgrepo-com.svg" alt="" width="50">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nihil consequatur perspiciatis, pariatur in sapiente sequi nam nostrumcupiditate provident suscipit explicabo necessitatibus saepe! Numquam ea temporibus molestiae assumenda enim!</p>
+          </div>
+          <div class="nums-services">
+            <img src="/images/number-circle-three-bold-svgrepo-com.svg" alt="" width="50">              
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus quas magni tempora aut, quos expedita at odio nemo eius aspernatur totam illo cumque sapiente laudantium vel rem distinctio inventore animi?</p>
+          </div>
+          <div class="nums-services">
+            <img src="/images/number-circle-four-bold-svgrepo-com.svg" alt="" width="50">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quo ea nobis! Nam doloribus dignissimos animi iste minus ab doloremque? Atque doloribus, sit enim repudiandae laboriosam vel aperiam eaque quam?</p>            
           </div>
         </div>
       </div>
+    </div>
+    
     <!-- footer -->
      <footer class="footer">
       <div class="footer-container">
-        <h5>About me</h5> <br>
-        <span><a href="#">Education</a></span> <br>
-        <span><a href="#">SKills</a></span>
+        <h5>Για μένα</h5> <br>
+        <span><a href="#">Προορισμοί</a></span> <br>
+        <span><a href="#">Φωτογραφίες</a></span>
       </div>
       <div class="footer-container">
-        <h5>Services</h5> <br>
-        <span><a href="#">Web Development</a></span> <br>
-        <span><a href="#">Branding</a></span> <br>
-        <span><a href="#">eCommerce</a></span> <br>
+        <h5>Βουνά</h5> <br>
+        <span><a href="#">Όλυμπος</a></span> <br>
+        <span><a href="#">Καϊμάκτσαλαν</a></span> <br>
+        <span><a href="#">Ψηλορείτης</a></span> <br>
       </div>
       <div class="footer-container">
-        <h5>Contact</h5> <br>
+        <h5>Επικοινωνία</h5> <br>
         <span><a href="tel:6987574979">(+30) 698757479</a></span> <br>
         <span><a href="mailto:georgepouliakis02@gmail.com">georgepouliakis02@gmail.com</a></span> <br>
       </div>
