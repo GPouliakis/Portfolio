@@ -16,7 +16,8 @@ body {
   align-items: center;
 }
 
-.left-header {
+.left-header a{
+  text-decoration: none;
   font-size: 19px;
   color: white;
 }
@@ -38,6 +39,53 @@ li a {
 
 li:hover a {
   color: lightblue;
+}
+
+
+/* Εισαγωγή σελίδας */
+.profile-box{
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 700px;
+}
+
+.profile-image{
+  width: auto;
+  margin-top: -120px;
+}
+.profile-image img{
+  width: 600px;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.about-me{
+  width: 35%;
+  margin-left: 0;
+}
+.about-me p{
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 3.5rem ;
+  margin-top: 120px;
+  color: #333;
+  line-height: 32px;
+}
+
+.color-box{
+  position: absolute;
+  z-index: -1;
+  width: 900px;
+  height: 500px;
+  top: 65%;
+  left: 40%;
+  background-color: rgba(245, 245, 245, 0.87);
+  border-radius: 12px;
 }
 
 /* Footer */
