@@ -1,7 +1,7 @@
 body {
   font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: 5 00;
+  font-weight: 500;
   background-color:  #1f2020 !important;
 }
 * {
@@ -33,6 +33,7 @@ li {
 li a {
   color: white;
   text-decoration: none;
+  font-weight: 300;
 }
 
 li:hover a {
@@ -105,31 +106,31 @@ li:hover a {
 
 
 
-/* Services */
-.services-container{
+/* Activities */
+.activites-container{
   height: 80vh;
-  /* background-color: rgb(255, 255, 255); */
   align-items: center;
   margin-top: 50px;
+  margin-bottom: 180px;
 }
-.box-services{
+.box-activities{
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: center;
 }
 
-.image-services{
+.image-activity{
   width: 30%;
 }
-.image-services img{
+.image-activity img{
   height: 730px;
   width: 100%;
   object-fit: cover;
   border-radius: 12px;
 }
 
-.services{
+.activities{
   display: flex;
   flex-direction: column;
   width: 30%;
@@ -138,13 +139,13 @@ li:hover a {
   margin-left: 20px;
   justify-content: space-around;
 }
-.nums-services{
+.activity{
   display: flex;
   flex-direction: row;
   text-align: justify;
   padding: 20px 50px
 }
-.nums-services>p{
+.activity>p{
   color: #333;
   margin-left: 8px;
   text-align: left;
