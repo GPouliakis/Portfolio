@@ -1,14 +1,13 @@
 body {
   font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: 5 00;
-  background-color:  #1f2020;;
+  font-weight: 500;
+  background-color:  #1f2020 !important;
 }
 * {
   margin: 0;
   padding: 0;
 }
-
 .header {
   height: 100px;
   background-color: #2d2d2d;
@@ -34,12 +33,12 @@ li {
 li a {
   color: white;
   text-decoration: none;
+  font-weight: 300;
 }
 
 li:hover a {
   color: lightblue;
 }
-
 
 /* Footer */
 .footer{
