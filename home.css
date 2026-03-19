@@ -9,6 +9,10 @@ body {
     font-weight: 500;
     background-color: #1f2020 !important;
     overflow-y: scroll; /* Κρατάει σταθερή τη θέση ακυρώνοντας τη διαφορά του scrollbar */
+    position: relative; /* Κλειδώνει το σημείο αναφοράς για το footer */
+    min-height: 100vh; /* Το body θα είναι τουλάχιστον όσο η οθόνη σου */
+    /* Το .footer σου έχει 250px height + 80px margin-top = 330px συνολικά */
+    padding-bottom: 330px;
 }
 .header{
   height: 100px;
@@ -176,6 +180,10 @@ body {
   margin-top: 80px;
   border-radius: 15px 15px 0px 0px;
   box-sizing: border-box !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 .footer-container{
   text-align: left;

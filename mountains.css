@@ -9,7 +9,9 @@ body {
     font-weight: 500;
     background-color: #1f2020 !important;
     overflow-y: scroll; /* Κρατάει σταθερή τη θέση ακυρώνοντας τη διαφορά του scrollbar */
-
+    position: relative; /* Κλειδώνει το σημείο αναφοράς για το footer */
+    min-height: 100vh; /* Το body θα είναι τουλάχιστον όσο η οθόνη σου */
+    padding-bottom: 330px;
 }
 .header{
   height: 100px;
@@ -64,6 +66,55 @@ body {
   transition: color 0.3s ease-in-out;
 }
 
+/* Mountain */
+.mountain-container{
+    display: grid;
+    grid-template-columns: 600px 600px 600px;
+    justify-content: center;
+    gap: 50px;
+    max-width: 100%;
+    margin-top: 120px;
+}
+.mountain-box{
+  position: relative; /* Σημαντικό: Θέτει το container ως σημείο αναφοράς */
+    width: 100%; /* Ρύθμισε το πλάτος που θέλεις */
+    max-width: 800px; /* Προαιρετικό: Μέγιστο πλάτος */
+    margin: 0 auto; /* Κεντράρει το container */
+    overflow: hidden; /* Κρύβει τυχόν περιεχόμενο που ξεχειλίζει */
+    border-radius: 8px; /* Προαιρετικό: Στρογγυλεμένες γωνίες */
+    box-shadow: 0 0px 8px rgb(255, 255, 255); /* Προαιρετικό: Σκιά */
+    transition: opacity 0.5s ease;
+}
+.mountain-box:hover{
+    opacity: 0.75;
+}
+
+.mountain-container img{
+    width: 100%; /* Κάνει την εικόνα να γεμίζει το container */
+    height: auto; /* Διατηρεί την αναλογία διαστάσεων */
+    display: block; /* Αφαιρεί το κενό κάτω από την εικόνα */
+    border-radius: 8px;
+}
+
+.name{
+    position: absolute; /* Σημαντικό: Τοποθετεί το κείμενο απόλυτα */
+    /* Κεντραρισμένο */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Κεντράρει τέλεια */
+    text-align: center;
+}
+.name h3{
+    font-family: "Inter",sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 0;
+    color: white !important;
+}
+.name a{
+    text-decoration: none;
+}
+
 /* Footer */
 .footer{
   display: grid;
@@ -75,6 +126,10 @@ body {
   margin-top: 80px;
   border-radius: 15px 15px 0px 0px;
   box-sizing: border-box !important;
+  position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 .footer-container{
   text-align: left;
