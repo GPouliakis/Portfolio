@@ -58,6 +58,10 @@ body {
     line-height: normal !important; /* Το επαναφέρουμε στο normal για να είναι ολόιδιο με τη σελίδα χωρίς Bootstrap */
     vertical-align: middle; /* Εξασφαλίζει την απόλυτη κάθετη στοίχιση στο κέντρο */
 }
+.right-header li a:hover{
+  color: lightsteelblue !important;
+  transition: color 0.3s ease-in-out;
+}
 
 /* Hero image */
 .hero {
@@ -171,6 +175,7 @@ body {
   background-color: #2d2d2d;
   margin-top: 80px;
   border-radius: 15px 15px 0px 0px;
+  box-sizing: border-box !important;
 }
 .footer-container{
   text-align: left;
@@ -178,14 +183,30 @@ body {
   margin-top: 50px;
 }
 .footer-container>h5{
-  font-weight: 300;
-  font-size: 17px
+  font-family: "Inter", sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 17px !important;
+  margin-top: 0 !important;
+  margin-bottom: 15px !important;
+  line-height: normal !important;
+  letter-spacing: normal !important;
+}
+.footer-container ul, li{
+  list-style-type: none !important;
+  margin: 0 0 10px 0 !important;
+  padding: 0 !important;
+  line-height: normal !important;
 }
 .footer-container a{
-  font-size: 13px;
-  color: #c0c0c0;
-  text-decoration: none;
+  font-family: "Inter", sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 300 !important;
+  color: #c0c0c0 !important;
+  text-decoration: none !important;
+  line-height: normal !important;
+  letter-spacing: normal !important;
+  display: inline-block !important;
 }
 .footer-container a:hover{
-  color: white;
+  color: white !important;
 }
