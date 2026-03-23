@@ -165,3 +165,73 @@ body {
   color: white !important;
   transition: color 0.3s ease-in-out;
 }
+
+/* MOBILE VIEW */
+@media (max-width: 767px) {
+  /* --- Header --- */
+  body {
+    padding-bottom: 0 !important;
+
+  }
+  .header {
+    height: auto; 
+    flex-direction: column; 
+    padding: 15px 0;
+  }
+  .left-header, .right-header {
+    width: 100%;
+  }
+  .right-header {
+    margin-top: 15px;
+  }
+  .right-header ul {
+    flex-wrap: wrap; 
+    gap: 10px;
+  }
+  .right-header li a {
+    font-size: 16px;
+  }
+  /* --- About Me --- */
+  .profile-box {
+    flex-direction: column; 
+    height: auto; 
+    margin-top: 20px;
+  }
+  .profile-image {
+    margin-top: 0; 
+    width: 90%; 
+    text-align: center;
+  }
+  .profile-image img {
+    width: 100%; 
+    height: auto;
+  }
+  .about-me {
+    width: 90%; 
+    margin-top: 20px;
+  }
+  .about-me p {
+    padding: 1.5rem; 
+    margin-top: 0; 
+    font-size: 18px; 
+    text-align: center;
+    color: white;
+  }
+  .color-box {
+    display: none; /* Το κρύβουμε στο mobile γιατί συνήθως σπάει το layout */
+  }
+
+  /* Footer */
+  .footer {
+    position: relative !important; 
+    height: auto !important; 
+    grid-template-columns: 1fr;
+    margin-top: 50px; 
+    border-radius: 0; 
+    padding-bottom: 30px;
+  }
+  .footer-container {
+    text-align: center; 
+    margin-top: 30px;
+  }
+}
